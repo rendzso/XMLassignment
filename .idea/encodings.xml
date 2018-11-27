@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" addBOMForNewFiles="with NO BOM">
+    <file url="file://$PROJECT_DIR$/src/model/AutóTipus.java" charset="windows-1250" />
+    <file url="file://$PROJECT_DIR$/src/model/EmbernevTipus.java" charset="windows-1250" />
+    <file url="file://$PROJECT_DIR$/src/model/FutárTipus.java" charset="windows-1250" />
+    <file url="file://$PROJECT_DIR$/src/model/HelyTipus.java" charset="windows-1250" />
+    <file url="file://$PROJECT_DIR$/src/model/ObjectFactory.java" charset="windows-1250" />
+    <file url="file://$PROJECT_DIR$/src/model/ÉtteremTipus.java" charset="windows-1250" />
+  </component>
+</project>

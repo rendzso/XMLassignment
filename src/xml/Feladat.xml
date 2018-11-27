@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Etterem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="Feladat.xsd">    
+        <Nev>Kifozde</Nev>
+        <Hely>
+            <Iranyitoszam>3908</Iranyitoszam>
+            <Varos>Rátka</Varos>
+            <Utca>Petőfi utca</Utca>
+            <Hazszam>6</Hazszam>
+        </Hely>
+        <Futar FutarID="1" MunkaAutoID="1">
+            <Nev>
+                <Vezeteknev>Bodnár</Vezeteknev>
+                <Keresztnev>Renátó</Keresztnev>
+            </Nev>
+            <Kor>23</Kor>
+        </Futar>
+        <Futar FutarID="2" MunkaAutoID="2">
+            <Nev>
+                <Vezeteknev>Tóth</Vezeteknev>
+                <Keresztnev>Béla</Keresztnev>
+            </Nev>
+            <Kor>30</Kor>
+        </Futar>
+        <Auto AutoID="1">
+            <Tipus>Honda</Tipus>
+            <Rendszam>ABC-123</Rendszam>
+            <Evjarat>1996</Evjarat>
+            <Szin>Zöld</Szin>
+        </Auto>
+        <Auto AutoID="2">
+            <Tipus>Suzuki</Tipus>
+            <Rendszam>BCD-132</Rendszam>
+            <Evjarat>2000</Evjarat>
+            <Szin>Kék</Szin>
+        </Auto>
+</Etterem>

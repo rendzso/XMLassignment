@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    
+    <xs:simpleType name="Kor_tipus">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="18"/>
+            <xs:maxInclusive value="70"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="Rendszam_tipus">
+            <xs:restriction base="xs:string">
+                <xs:pattern value="[A-Z]{3}-[0-9]{3}"/>
+            </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:complexType name="Hely_tipus">
+        <xs:all>
+            <xs:element name="Iranyitoszam" type="xs:integer"/>
+            <xs:element name="Varos" type="xs:string"/>
+            <xs:element name="Utca" type="xs:string"/>
+            <xs:element name="Hazszam" type="xs:integer"/>
+        </xs:all>
+    </xs:complexType>
+    
+    <xs:complexType name="Embernev_tipus">
+        <xs:sequence>
+            <xs:element name="Vezeteknev" type="xs:string"/>
+            <xs:element name="Keresztnev" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="Futar_tipus">
+        <xs:all>
+            <xs:element name="Nev" type="Embernev_tipus"/>
+            <xs:element name="Kor" type="Kor_tipus"/>
+        </xs:all>
+        <xs:attribute name="FutarID" type="xs:integer" use="required"/>
+        <xs:attribute name="MunkaAutoID" type="xs:integer" use="required" />
+    </xs:complexType>
+    
+    <xs:complexType name="Auto_tipus">
+        <xs:all>
+            <xs:element name="Tipus" type="xs:string"/>
+            <xs:element name="Rendszam" type="Rendszam_tipus"/>
+            <xs:element name="Evjarat" type="xs:integer"/>
+            <xs:element name="Szin" type="xs:string"/>
+        </xs:all>
+        <xs:attribute name="AutoID" type="xs:integer" use="required"/>
+    </xs:complexType>
+    
+    <xs:complexType name="Etterem_tipus">
+        <xs:sequence>
+            <xs:element name="Nev" type="xs:string"/>
+            <xs:element name="Hely" type="Hely_tipus"/>            
+            <xs:element name="Futar" type="Futar_tipus" maxOccurs="unbounded"/>
+            <xs:element name="Auto" type="Auto_tipus" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:element name="Etterem" type="Etterem_tipus">
+        <xs:key name="FutarKey">
+            <xs:selector xpath="Futar"/>
+            <xs:field xpath="@FutarID"/>
+        </xs:key>
+        <xs:key name="AutoKey">
+            <xs:selector xpath="Auto"/>
+            <xs:field xpath="@AutoID"/>
+        </xs:key>
+        <xs:keyref refer="AutoKey" name="MunkaAutoKey">
+            <xs:selector xpath="Futar"/>
+            <xs:field xpath="@MunkaAutoID"/>
+        </xs:keyref>
+        <xs:key name="MunkaAutoKeyEgyediseg">
+            <xs:selector xpath="Futar"/>
+            <xs:field xpath="@MunkaAutoID"/>
+        </xs:key>
+    </xs:element>
+    
+</xs:schema>
