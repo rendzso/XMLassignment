@@ -5,7 +5,6 @@ import javax.xml.bind.JAXBException;
 
 public class UpdateAuto {
 
-    private static String XML_PATH="src/xml/Feladat.xml";
 
     private static void updateAuto() throws JAXBException {
         EtteremTipus etts = ContentUnmarshall.Load();

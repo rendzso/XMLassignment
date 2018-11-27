@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Etterem>
-    <Nev>Valtottam nevet</Nev>
+    <Nev>Kifozde</Nev>
     <Hely>
-        <Iranyitoszam>1234</Iranyitoszam>
-        <Varos>Valami</Varos>
-        <Utca>Nincs ilyen utca</Utca>
-        <Hazszam>10</Hazszam>
+        <Iranyitoszam>3908</Iranyitoszam>
+        <Varos>Ratka</Varos>
+        <Utca>Petofi Sandor utca</Utca>
+        <Hazszam>6</Hazszam>
     </Hely>
-    <Futar FutarID="5" MunkaAutoID="5">
+    <Futar FutarID="1" MunkaAutoID="1">
         <Nev>
-            <Vezeteknev>Elso</Vezeteknev>
-            <Keresztnev>Masodik</Keresztnev>
+            <Vezeteknev>Bodnar</Vezeteknev>
+            <Keresztnev>Renato</Keresztnev>
         </Nev>
-        <Kor>50</Kor>
+        <Kor>23</Kor>
     </Futar>
     <Futar FutarID="2" MunkaAutoID="2">
         <Nev>
@@ -21,29 +21,16 @@
         </Nev>
         <Kor>30</Kor>
     </Futar>
-    <Futar FutarID="3" MunkaAutoID="3">
-        <Nev>
-            <Vezeteknev>Humbak</Vezeteknev>
-            <Keresztnev>Ferenc</Keresztnev>
-        </Nev>
-        <Kor>45</Kor>
-    </Futar>
-    <Auto AutoID="5">
-        <Tipus>Uj tipus</Tipus>
-        <Rendszam>RRR-111</Rendszam>
-        <Evjarat>2010</Evjarat>
-        <Szin>Uj szin</Szin>
+    <Auto AutoID="1">
+        <Tipus>Honda</Tipus>
+        <Rendszam>ABC-123</Rendszam>
+        <Evjarat>1996</Evjarat>
+        <Szin>Zold</Szin>
     </Auto>
     <Auto AutoID="2">
         <Tipus>Suzuki</Tipus>
         <Rendszam>BCD-321</Rendszam>
         <Evjarat>2000</Evjarat>
         <Szin>Kek</Szin>
-    </Auto>
-    <Auto AutoID="3">
-        <Tipus>Mercedes</Tipus>
-        <Rendszam>EEE-222</Rendszam>
-        <Evjarat>1990</Evjarat>
-        <Szin>Fekete</Szin>
     </Auto>
 </Etterem>

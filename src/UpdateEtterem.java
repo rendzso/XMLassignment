@@ -3,7 +3,6 @@ import javax.xml.bind.JAXBException;
 
 public class UpdateEtterem {
 
-    private static String XML_PATH="src/xml/Feladat.xml";
 
     private static void updateEtterem() throws JAXBException {
         EtteremTipus etts = ContentUnmarshall.Load();

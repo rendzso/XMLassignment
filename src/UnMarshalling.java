@@ -6,7 +6,6 @@ import javax.xml.bind.JAXBException;
 
 public class UnMarshalling{
 
-    private static String XML_PATH="src/xml/Feladat.xml";
 
     public static void main(String[] args) throws JAXBException{
 

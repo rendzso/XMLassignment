@@ -5,7 +5,6 @@ import javax.xml.bind.JAXBException;
 
 public class AddFutar {
 
-    private static String XML_PATH="src/xml/Feladat.xml";
 
     private static void addFutar() throws JAXBException {
         EtteremTipus etts = ContentUnmarshall.Load();

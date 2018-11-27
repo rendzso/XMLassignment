@@ -4,8 +4,6 @@ import javax.xml.bind.JAXBException;
 
 public class AddAuto {
 
-    private static String XML_PATH="src/xml/Feladat.xml";
-
     private static void addAuto() throws JAXBException {
         EtteremTipus etts = ContentUnmarshall.Load();
 
