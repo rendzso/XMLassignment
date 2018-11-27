@@ -43,11 +43,11 @@ public class AutoTipus {
     @XmlElement(name = "Rendszam", required = true)
     protected String rendszam;
     @XmlElement(name = "Evjarat", required = true)
-    protected BigInteger evjarat;
+    protected int evjarat;
     @XmlElement(name = "Szin", required = true)
     protected String szin;
     @XmlAttribute(name = "AutoID", required = true)
-    protected BigInteger autoID;
+    protected int autoID;
 
     /**
      * Gets the value of the tipus property.
@@ -105,19 +105,19 @@ public class AutoTipus {
      *     {@link BigInteger }
      *     
      */
-    public BigInteger getEvjarat() {
+    public int getEvjarat() {
         return evjarat;
     }
 
     /**
      * Sets the value of the evjarat property.
-     * 
+     *
      * @param value
      *     allowed object is
      *     {@link BigInteger }
      *     
      */
-    public void setEvjarat(BigInteger value) {
+    public void setEvjarat(int value) {
         this.evjarat = value;
     }
 
@@ -153,19 +153,19 @@ public class AutoTipus {
      *     {@link BigInteger }
      *     
      */
-    public BigInteger getAutoID() {
+    public int getAutoID() {
         return autoID;
     }
 
     /**
      * Sets the value of the autoID property.
-     * 
+     *
      * @param value
      *     allowed object is
      *     {@link BigInteger }
      *     
      */
-    public void setAutoID(BigInteger value) {
+    public void setAutoID(int value) {
         this.autoID = value;
     }
 

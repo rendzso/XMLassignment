@@ -44,9 +44,9 @@ public class FutarTipus {
     @XmlSchemaType(name = "integer")
     protected int kor;
     @XmlAttribute(name = "FutarID", required = true)
-    protected BigInteger futarID;
+    protected int futarID;
     @XmlAttribute(name = "MunkaAutoID", required = true)
-    protected BigInteger munkaAutoID;
+    protected int munkaAutoID;
 
     /**
      * Gets the value of the nev property.
@@ -96,19 +96,19 @@ public class FutarTipus {
      *     {@link BigInteger }
      *     
      */
-    public BigInteger getFutarID() {
+    public int getFutarID() {
         return futarID;
     }
 
     /**
      * Sets the value of the futarID property.
-     * 
+     *
      * @param value
      *     allowed object is
      *     {@link BigInteger }
      *     
      */
-    public void setFutarID(BigInteger value) {
+    public void setFutarID(int value) {
         this.futarID = value;
     }
 
@@ -120,19 +120,19 @@ public class FutarTipus {
      *     {@link BigInteger }
      *     
      */
-    public BigInteger getMunkaAutoID() {
+    public int getMunkaAutoID() {
         return munkaAutoID;
     }
 
     /**
      * Sets the value of the munkaAutoID property.
-     * 
+     *
      * @param value
      *     allowed object is
      *     {@link BigInteger }
      *     
      */
-    public void setMunkaAutoID(BigInteger value) {
+    public void setMunkaAutoID(int value) {
         this.munkaAutoID = value;
     }
 

@@ -37,13 +37,13 @@ import javax.xml.bind.annotation.XmlType;
 public class HelyTipus {
 
     @XmlElement(name = "Iranyitoszam", required = true)
-    protected BigInteger iranyitoszam;
+    protected int iranyitoszam;
     @XmlElement(name = "Varos", required = true)
     protected String varos;
     @XmlElement(name = "Utca", required = true)
     protected String utca;
     @XmlElement(name = "Hazszam", required = true)
-    protected BigInteger hazszam;
+    protected int hazszam;
 
     /**
      * Gets the value of the iranyitoszam property.
@@ -53,19 +53,19 @@ public class HelyTipus {
      *     {@link BigInteger }
      *     
      */
-    public BigInteger getIranyitoszam() {
+    public int getIranyitoszam() {
         return iranyitoszam;
     }
 
     /**
      * Sets the value of the iranyitoszam property.
-     * 
+     *
      * @param value
      *     allowed object is
      *     {@link BigInteger }
      *     
      */
-    public void setIranyitoszam(BigInteger value) {
+    public void setIranyitoszam(int value) {
         this.iranyitoszam = value;
     }
 
@@ -125,19 +125,19 @@ public class HelyTipus {
      *     {@link BigInteger }
      *     
      */
-    public BigInteger getHazszam() {
+    public int getHazszam() {
         return hazszam;
     }
 
     /**
      * Sets the value of the hazszam property.
-     * 
+     *
      * @param value
      *     allowed object is
      *     {@link BigInteger }
      *     
      */
-    public void setHazszam(BigInteger value) {
+    public void setHazszam(int value) {
         this.hazszam = value;
     }
 
