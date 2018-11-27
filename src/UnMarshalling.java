@@ -12,10 +12,8 @@ public class UnMarshalling{
     private static String XML_PATH="src/xml/Feladat.xml";
 
     public static void main(String[] args) throws JAXBException{
-    JAXBContext jaxbContext = JAXBContext.newInstance(EtteremTipus.class);
-    Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
 
-    EtteremTipus etts = (EtteremTipus) jaxbUnmarshaller.unmarshal( new File(XML_PATH) );
+    EtteremTipus etts = ContentUnmarshall.Load();
 
 
         System.out.println("Etterem neve: " + etts.getNev());

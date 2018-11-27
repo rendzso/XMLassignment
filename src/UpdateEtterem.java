@@ -13,10 +13,7 @@ public class UpdateEtterem {
     private static String XML_PATH="src/xml/Feladat.xml";
 
     private static void updateEtterem() throws JAXBException {
-        JAXBContext jaxbContext = JAXBContext.newInstance(EtteremTipus.class);
-        Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
-
-        EtteremTipus etts = (EtteremTipus) jaxbUnmarshaller.unmarshal(new File(XML_PATH));
+        EtteremTipus etts = ContentUnmarshall.Load();
 
         etts.setNev("Valtottam nevet");
         etts.getHely().setIranyitoszam(1234);

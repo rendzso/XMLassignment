@@ -13,10 +13,8 @@ public class AddFutar {
     private static String XML_PATH="src/xml/Feladat.xml";
 
     private static void addFutar() throws JAXBException {
-        JAXBContext jaxbContext = JAXBContext.newInstance(EtteremTipus.class);
-        Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
+        EtteremTipus etts = ContentUnmarshall.Load();
 
-        EtteremTipus etts = (EtteremTipus) jaxbUnmarshaller.unmarshal(new File(XML_PATH));
         FutarTipus futar = new FutarTipus();
         EmbernevTipus nev = new EmbernevTipus();
 
