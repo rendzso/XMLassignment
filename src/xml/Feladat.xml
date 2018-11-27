@@ -21,6 +21,13 @@
         </Nev>
         <Kor>30</Kor>
     </Futar>
+    <Futar FutarID="3" MunkaAutoID="3">
+        <Nev>
+            <Vezeteknev>HumbĂˇk</Vezeteknev>
+            <Keresztnev>Ferenc</Keresztnev>
+        </Nev>
+        <Kor>45</Kor>
+    </Futar>
     <Auto AutoID="1">
         <Tipus>Honda</Tipus>
         <Rendszam>ABC-123</Rendszam>
@@ -32,5 +39,11 @@
         <Rendszam>BCD-321</Rendszam>
         <Evjarat>2000</Evjarat>
         <Szin>Kek</Szin>
+    </Auto>
+    <Auto AutoID="3">
+        <Tipus>Mercedes</Tipus>
+        <Rendszam>EEE-222</Rendszam>
+        <Evjarat>1990</Evjarat>
+        <Szin>Fekete</Szin>
     </Auto>
 </Etterem>
