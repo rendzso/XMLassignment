@@ -64,17 +64,8 @@ public class Marshalling {
 
         etterem.getAuto().add(auto2);
 
+        ContentChangeMarshall.Save(etterem);
 
-        JAXBContext jaxbContext = JAXBContext.newInstance(EtteremTipus.class);
-        Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
-
-        jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
-
-        //Marshal the employees list in console
-        jaxbMarshaller.marshal(etterem, System.out);
-
-        //Marshal the employees list in file
-        jaxbMarshaller.marshal(etterem, new File(XML_PATH));
     }
     public static void main(String[] args) {
         // TODO Auto-generated method stub

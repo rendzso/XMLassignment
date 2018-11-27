@@ -29,15 +29,7 @@ public class AddFutar {
 
         etts.getFutar().add(futar);
 
-        Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
-
-        jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
-
-        //Marshal the employees list in console
-        jaxbMarshaller.marshal(etts, System.out);
-
-        //Marshal the employees list in file
-        jaxbMarshaller.marshal(etts, new File(XML_PATH));
+        ContentChangeMarshall.Save(etts);
 
     }
 
