@@ -1,10 +1,6 @@
 import model.*;
-
-import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
-import javax.xml.bind.Marshaller;
-import java.io.File;
-import java.math.BigInteger;
+
 
 public class Marshalling {
 
